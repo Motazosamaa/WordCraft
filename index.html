@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Craft</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #30a3fc;
+            font-family: Arial, sans-serif;
+        }
+        .form-control-lg {
+            border-radius: 1rem;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease-in-out;
+        }
+        .form-control:focus {
+            outline: 0;
+            box-shadow: 0 0 0 5px #004b84;
+        }
+        .custom-header {
+            background-color: #004b84;
+            height: 15vh;
+        }
+        .letter-button {
+            font-size: 24px;
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #ffffff;
+            color: black;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .letter-button:hover {
+            background-color: #004b84;
+        }
+        .letter-button:focus {
+            outline: none;
+            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+        }
+        .image {
+            max-height: 200px;
+            margin-top: 20px;
+        }
+        .feedback {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="custom-header text-center text-white py-3">
+        <h1 class="mt-1"><span style="color: #EDC6B1;">Word</span>Craft</h1>
+    </header>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3">
+                <div class="col-12 text-center mt-4">
+                    <h2>Enter a number to start the game</h2>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="form-group">
+                        <input
+                            type="number"
+                            id="numberInput"
+                            class="form-control form-control-lg mt-3 form-control-rounded"
+                            placeholder="Enter a number"
+                            aria-label="Enter a number"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button id="generateButton" class="btn btn-primary mt-3 me-2">
+                        Start
+                    </button>
+                    <button id="stopMusicButton" class="btn btn-danger mt-3" style="display: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-mute" viewBox="0 0 16 16">
+                            <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06M6 5.04 4.312 6.39A.5.5 0 0 1 4 6.5H2v3h2a.5.5 0 0 1 .312.11L6 10.96zm7.854.606a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 offset-md-3 text-center">
+                    <div id="feedback" class="feedback"></div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12 col-md-6 offset-md-3 text-center" id="lettersContainer"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
