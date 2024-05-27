@@ -1,6 +1,3 @@
-Here's a detailed description for your GitHub repository:
-
----
 
 # WordCraft: Interactive Alphabet Learning Game for Kids
 
@@ -72,12 +69,6 @@ wordcraft/
 ## Contributing
 Contributions are welcome! If you have any ideas for improvements or new features, feel free to open an issue or submit a pull request.
 
-## Acknowledgments
-A huge thank you to **Eng. Shery Ashraf** for the invaluable guidance and support throughout this project. Your expertise and encouragement have been instrumental in bringing WordCraft to life.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-Feel free to customize the description further to fit your project's specifics and preferences.
